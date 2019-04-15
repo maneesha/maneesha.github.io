@@ -2,6 +2,7 @@
 title: 'Python and GeoPandas'
 layout: blog
 date: 2018-06-22
+categories: 'Programming'
 ---
 
 I recently worked on a [report](https://github.com/carpentries/assessment/tree/master/programmatic-assessment/workshops) documenting instructor and workshop activities for [The Carpentries](https://www.carpentries.org).  Much of it was built using [Pandas](https://pandas.pydata.org/), a tool I am relatively familiar with. I also included some geospatial visualizations, using [GeoPandas](http://geopandas.org) for the first time.

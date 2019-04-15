@@ -2,6 +2,7 @@
 title: 'Roast Chicken Thighs'
 layout: blog
 date: 2019-01-06
+categories: 'Cooking'
 ---
 
 This is adapted from a Cooks Illustrated recipe for Quick Stovetop Roast Chicken (November/December 2008), to be not so quick -- because long and slow roasted chicken is way better. Active cooking time remains the same but total cooking time goes up by about an hour.

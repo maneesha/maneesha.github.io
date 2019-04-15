@@ -2,6 +2,7 @@
 title: 'Pork and Green Bean Stir Fry'
 layout: blog
 date: 2018-11-01
+categories: 'Cooking'
 ---
 
 This recipe is inspired by [Bon Appetit](https://www.epicurious.com/recipes/food/views/pork-stir-fry-with-green-beans-and-peanuts-108451).
