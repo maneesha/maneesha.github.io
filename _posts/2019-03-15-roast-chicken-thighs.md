@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Roast Chicken Thighs
+permalink: /chicken/
 ---
 
 ## Chicken
