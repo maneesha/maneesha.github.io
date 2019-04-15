@@ -24,7 +24,7 @@
 
  {% include navigation.html %}
     
-This is where I keep my favorite recipes. This is also where I keep write-ups of programming work I've figured out, to save me having to figure it out again. Sometimes I rant as a parent.     
+This is where I keep my favorite recipes. This is also where I keep write-ups of programming work I've figured out, to save me having to figure it out again. Sometimes I rant as a parent.    
 
 
 
@@ -45,11 +45,33 @@ This is where I keep my favorite recipes. This is also where I keep write-ups of
         {% endif %}
     
 
+<hr>
+<h4>Find me on...</h4>    
 
-      
-      
-      
-      </header>
+<ul>
+
+{% if site.twitter_username %}  
+<li>
+<a href="https://www.twitter.com/{{ site.twitter_username }}">Twitter</a>
+</li>
+{% endif %}
+
+{% if site.github_username %} 
+<li> 
+<a href="https://www.github.com/{{ site.github_username }}">GitHub</a>
+ </li>
+{% endif %}
+
+{% if site.linkedin_username %} 
+<li> 
+<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">Linkedin</a>
+</li>
+{% endif %}
+
+
+</ul>      
+
+     </header>
      
       
       
