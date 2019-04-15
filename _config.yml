@@ -2,3 +2,6 @@ theme: jekyll-theme-minimal
 
 title: Cooking, Programming, Parenting
 description: Not necessarily in that order.
+
+permalink: /:categories/:year/:month/:title:output_ext
+
