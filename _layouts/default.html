@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
+    {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
   </head>
+
+
   <body>
     <div class="wrapper">
       <header>
@@ -22,11 +24,9 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
- {% include navigation.html %}
+        {% include navigation.html %}
     
-This is where I keep my favorite recipes. This is also where I keep write-ups of programming work I've figured out, to save me having to figure it out again. Sometimes I rant as a parent.    
-
-
+        This is where I keep my favorite recipes. This is also where I keep write-ups of programming work I've figured out, to save me having to figure it out again. Sometimes I rant as a parent.    
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
@@ -45,51 +45,53 @@ This is where I keep my favorite recipes. This is also where I keep write-ups of
         {% endif %}
     
 
-<hr>
-<h4>Find me on...</h4>    
+        <hr>
+        <h4>Find me on...</h4>    
 
-<ul>
+        <ul>
+          {% if site.twitter_username %}  
+          <li>
+          <a href="https://www.twitter.com/{{ site.twitter_username }}">Twitter</a>
+          </li>
+          {% endif %}
 
-{% if site.twitter_username %}  
-<li>
-<a href="https://www.twitter.com/{{ site.twitter_username }}">Twitter</a>
-</li>
-{% endif %}
+          {% if site.github_username %} 
+          <li> 
+          <a href="https://www.github.com/{{ site.github_username }}">GitHub</a>
+           </li>
+          {% endif %}
 
-{% if site.github_username %} 
-<li> 
-<a href="https://www.github.com/{{ site.github_username }}">GitHub</a>
- </li>
-{% endif %}
+          {% if site.linkedin_username %} 
+          <li> 
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">Linkedin</a>
+          </li>
+          {% endif %}
+        </ul>      
 
-{% if site.linkedin_username %} 
-<li> 
-<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">Linkedin</a>
-</li>
-{% endif %}
-
-
-</ul>      
-
-     </header>
+    </header>
      
-      
-      
-      
-      
-      <section>
+ 
+    <section>
 
-      {{ content }}
+     {{ content }}
 
-      </section>
-      <footer>
+    </section>
+
+
+
+
+
+    <footer>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+    </footer>
+    
     </div>
+    
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -100,5 +102,7 @@ This is where I keep my favorite recipes. This is also where I keep write-ups of
       ga('send', 'pageview');
     </script>
     {% endif %}
+
+
   </body>
 </html>
